@@ -214,7 +214,7 @@ margin-top:60px;
 
 
 #education{
-background:url(../img/demo-images/parallax-bg.jpg) no-repeat fixed center top;
+background:url(../img/demo-images/parallax-bgtwo.jpg) no-repeat fixed center top;
 /*background-size*/
 -webkit-background-size:/*@@prefixmycss->No equivalent*/;
    -moz-background-size:cover;
@@ -303,10 +303,10 @@ list-style:none;
 }
 .clients-list li{
 float:left;
-width:33%;
+width:33% !important;
 }
 .clients-list li img{
-height:auto;
+height:100% !important;
 width:100%;
 }
 .testimonial_section{
@@ -379,6 +379,9 @@ position:relative;
 border-color:#fff;
 color:#fff;
 background-color: #57bddb;
+}
+#parallax_1 .btn-bordered:hover{
+  opacity:0.7;
 }
 #parallax_1 h2.page-title{
 color:#fff;

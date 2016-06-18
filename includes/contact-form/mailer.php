@@ -21,28 +21,29 @@
 
         // Set the recipient email address.
         // FIXME: Update this to your desired email address.
-        $recipient = "raselahmed7@gmail.com";
+        $recipient = "solastley@gmail.com";
 
         // Set the email subject.
         $subject = "New contact from $name";
 
         // Build the email content.
-        $email_content = "Name: $name\n";
-        $email_content .= "Email: $email\n\n";
-        $email_content .= "Message:\n$message\n";
+        $email_content = "Name: $name\r\n";
+        $email_content .= "Email: $email\r\n";
+        $email_content .= "Message:\r\n$message\r\n";
 
         // Build the email headers.
-        $email_headers = "From: $name <$email>";
+        $headers = "From: noreply@solomonastley.com\n";
+        $headers .= "Reply-To: $email";
 
         // Send the email.
-        if (mail($recipient, $subject, $email_content, $email_headers)) {
+        if (mail($recipient, $subject, $email_content, $headers)) {
             // Set a 200 (okay) response code.
             http_response_code(200);
             echo "Thank You! Your message has been sent.";
         } else {
             // Set a 500 (internal server error) response code.
             http_response_code(500);
-            echo "Oops! Something went wrong and we couldn't send your message.";
+            echo "Sorry, the contact form is not currently working...";
         }
 
     } else {
