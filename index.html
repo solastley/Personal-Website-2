@@ -9,8 +9,6 @@
 		<meta property="og:site_name" content="Solomon Astley Profile"/>
 		<meta property="og:description" content="The home page of Solomon Astley - Full Stack Developer and Designer"/>
 		<meta property="og:image" content="img/demo-images/parallax-bg.jpg">
-        <!-- Color Pickr -->
-        <link href="includes/color-pickr/color-pickr.css" rel="stylesheet">
         <!-- Bootstrap -->
         <link href="includes/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 		<!-- WOW JS Animation -->
@@ -28,17 +26,14 @@
 		<!-- Web Fonts -->
 		<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
-		<!-- Favicons -->
-		<link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png">
-		<link rel="icon" href="/favicon.ico">
 
 
 		<!--[if lte IE 8]>
 			<link rel="stylesheet" type="text/css" href="css/fucking-ie-8-and-lower.css" />
 		<![endif]-->
-		
-		
-		
+
+
+
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -46,7 +41,7 @@
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
     </head>
-    <body onload="init()" id="body">
+    <body id="body">
 
 		<div id="preloader">
 			<div class="spinner">
@@ -59,13 +54,13 @@
 				<div class="cube"></div>
 				<div class="cube"></div>
 				<div class="cube"></div>
-			</div>			
+			</div>
 		</div><!--preloader end-->
-		
-		
+
+
 		<section id="home">
 			<div class="home-overlay"></div>
-			
+
 			<div class="welcome-text">
 				<div class="container">
 					<div style="padding-bottom: 200px">
@@ -75,7 +70,7 @@
 				</div>
 			</div>
 		</section><!--home section end-->
-		
+
         <nav id="navigation">
             <div class="navbar navbar-default navbar-static-top" role="navigation">
                 <div class="container">
@@ -102,18 +97,24 @@
                 </div><!--/.container -->
             </div><!--navbar-default-->
         </nav><!--navigation section end here-->
-		
+
 		<section id="about">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6 wow animated fadeInUp">
 						<h2 class="page-title">About Me</h2>
-						<p>I am a full-time student and part-time web developer. I study computer science at The University of Pittsburgh. In the summer of 2016, I will be working as a software engineering intern at MAYA Design, located in Pittsburgh, PA.</p>
-						
-						<p>I specialize in full-stack development. I have a large amount of familiarity with various languages, frameworks, and libraries, such as:</p>
-						<div class="row">
+						<p>I am a full-time student and part-time web developer.
+                            I study computer science at The University of Pittsburgh.
+                            In the summer of 2016, I will be working as a software
+                            engineering intern at MAYA Design, located in
+                            Pittsburgh, PA.<br/>Check out my <a href="Resume.pdf" target="_blank">resume</a>.</p>
+
+						<p>I specialize in full-stack development. I have a large
+                            amount of familiarity with various languages,
+                            frameworks, and libraries, such as:</p>
+						<div class="row" style="text-align:center;">
 							<strong>
-							<div class="col-md-3">
+							<div class="col-sm-3 skill-container">
 								<ul style="list-style-type: none; padding-left: 0;">
 									<li>Java</li>
 									<li>JavaScript</li>
@@ -123,29 +124,25 @@
 									<li>CSS3</li>
 								</ul>
 							</div>
-							<div class="col-md-3">
+							<div class="col-sm-3 skill-container">
 								<ul style="list-style-type: none; padding-left: 0;">
-									<li>MEAN Stack</li>
-									<ol style="padding-left: 0;">
-										<li>MongoDB</li>
-										<li>Express</li>
-										<li>AngularJS</li>
-										<li>Node.js</li>
-									</ol>
+									<li>MEAN Stack:</li>
+									<li>MongoDB</li>
+									<li>Express</li>
+									<li>AngularJS</li>
+									<li>Node.js</li>
 								</ul>
 							</div>
-							<div class="col-md-3">
+							<div class="col-sm-3 skill-container">
 								<ul style="list-style-type: none; padding-left: 0;">
-									<li>LAMP Stack</li>
-									<ol style="padding-left: 0;">
-										<li>Linux</li>
-										<li>Apache</li>
-										<li>MySQL</li>
-										<li>PHP/Python</li>
-									</ol>
+									<li>LAMP Stack:</li>
+									<li>Linux</li>
+									<li>Apache</li>
+									<li>MySQL</li>
+									<li>PHP/Python</li>
 								</ul>
 							</div>
-							<div class="col-md-3">
+							<div class="col-sm-3 skill-container">
 								<ul style="list-style-type: none; padding-left: 0;">
 									<li>jQuery</li>
 									<li>Bootstrap</li>
@@ -160,15 +157,15 @@
 						<p>Additionally, I have experience using AWS, in particular EC2, S3, and Elastic Beanstalk.</p>
 						<p>In my free time, I also really enjoy travelling! I believe that experiencing other cultures and visiting new places is not only fun, but also incredibly important to view the world for what it truly is - an insanely complicated and diverse place.</p>
 					</div>
-					
+
 					<div class="col-md-6 wow animated fadeInUp">
 						<img class="img-responsive selfie" src="img/demo-images/selfie.jpg" alt="" />
 					</div>
 				</div>
 			</div>
 		</section>
-		
-		<section id="education" class="section-padding">		
+
+		<section id="education" class="section-padding">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 text-center wow animated fadeInUp">
@@ -234,7 +231,7 @@
 						<p>A collection of some of my favorite projects. These include projects I completed for school, projects I created at hackathons, projects I was hired to complete for my freelance work, and projects I just did in my free time.</p>
 					</div><!--hero title end-->
 				</div>
-			
+
 				<div class="row wow animated fadeInUp">
 					<div class="testimonial_section">
 						<div class="col-lg-5 col-md-6 col-sm-12 col-xs-12">
@@ -269,14 +266,14 @@
 								</li>
 							</ul><!--project photo end-->
 						</div>
-						
+
 						<div class="col-lg-7 col-md-6 col-sm-12 col-xs-12">
 							<div class="client-testimonials-list">
 								<div id="project-01" class="single-testimonial tab-pane fade in">
 									<h2>Sign Me</h2>
 									<p>This is a project that my team completed at Dragon Hacks 2016 at Drexel University. It won for best hack overall. The project was actually a hardware hack in which we utilized a Microsoft Kinect and an open-source algorithm for sign-language translation to facilitate communication between deaf and non-deaf individuals.</p>
                             		<p>With Sign Me, a non-deaf individual could wear a motion-tracking camera which would record their partner speaking in American sign language. Sign Me would then translate the signs to English and send the translation to the user via a text message. The user could then respond to their partner via a voice-to-text message.</p>
-									
+
 									<div class="client-info">
 										<h2>Check It Out</h2>
 										<a target="_blank" href="http://devpost.com/software/sign-me">Sign Me Devpost</a>
@@ -286,7 +283,7 @@
 									<h2>Christina Acuna Castillo Profile</h2>
 									<p>This is a website I was commissioned to create by Christina Acuna, an aspiring digital graphic artist, photographer, and poet. Christina asked me to create a simple, pastel themed website for her where she could showcase some examples of her work.</p>
 									<p>Although Christina ended up changing quite a lot of my original design, the website is a great example of my ability to mould the design, structure, and function of a site for my client's needs.</p>
-									
+
 									<div class="client-info">
 										<h2>Check It Out</h2>
 										<a target="_blank" href="http://www.cac-art.com">www.cac-art.com</a>
@@ -296,7 +293,7 @@
 									<h2>CashOut</h2>
 									<p>This is a project my team developed at Fashion Tech Hackathon 2016 at Kent State University. It won the award for best hack with a .tech domain. In this project, we created an android application that would scan RFID tags on retail items and add them to a virtual shopping cart. The implication of this would be that a user of the application could go into a retail store, see an item that they want to purchase, scan the RFID tag, and then purchase that item from the application without ever having to get in line.</p>
 									<p>After the hackathon, I entered the idea for CashOut into a startup competition at my university with a new team at my side. Our team performed extensive market research, competetive analysis, and client searching to develop a business plan for our startup. We ended up finishing as runners up in the competition, but we're currently discussing the possibility of continuing to pursue the idea with help from an angel investor.</p>
-									
+
 									<div class="client-info">
 										<h2>Check It Out</h2>
 										<a target="_blank" href="https://d1bqtulbdbcodl.cloudfront.net/">www.cashtag.tech</a>
@@ -306,7 +303,7 @@
 									<h2>AutoLight</h2>
 									<p>This is a project that was completed by my team at PittApps 2016 and won the award for Best Energy-Related Hack. In this project, we utilized an arduino, a small servo motor, and an infrared sensor to create a device which turns lights on and off as the user enters/leaves a room. We designed an arm that could attach to the servo motor in OpenSCAD and used a 3D printer to make it.</p>
                             		<p>Although similar technologies already exist, they are expensive to manufacture and can be difficult to implement for the average person with little technical skill. The idea of this hack was to improve the availability of energy-saving technology for the average person.</p>
-									
+
 									<div class="client-info">
 										<h2>Check It Out</h2>
 										<a target="_blank" href="http://devpost.com/software/autolight">AutoLight Devpost</a>
@@ -316,7 +313,7 @@
 									<h2>Pong Clone</h2>
 									<p>This is a small project I completed using JavaScript during my spare time. I wanted to see if I could create a simple game using only JavaScript and Pong is a game I have always enjoyed.</p>
 									<p>Please note that much of the code for the game was created with help from a guide, and this is something I created when I first began learning to program. A notable feature that I added outside of the guide was the score-keeping.</p>
-									
+
 									<div class="client-info">
 										<h2>Check It Out</h2>
 										<a target="_blank" href="pong/index.html">Play Pong</a>
@@ -326,7 +323,7 @@
 									<h2>Bug Buster</h2>
 									<p>Bug Buster is a project I completed for my Computer Organization and Assembly Language class. It is a simple version of the popular arcade game <i>Space Invaders</i>. The game is programmed entirely in MIPS assembly language. In order to test the game, you will need to download a special version of the MARS software which contains a special LED display tool that was created by the University of Pittsburgh. The software is available in the GitHub repository.</p>
 									<p>Naturally, like any program created in assembly, this took an awfully long time to create.</p>
-									
+
 									<div class="client-info">
 										<h2>Check It Out</h2>
 										<a target="_blank" href="https://github.com/solastley/Bug-Buster">Bug Buster Repository</a>
@@ -334,14 +331,14 @@
 								</div>
 								<div id="project-07" class="single-testimonial tab-pane fade in active">
 									<h2>PHP Blog</h2>
-									<p>I created a personal blog using the Kirby CMS and PHP. Kirby is a database-less CMS 
-									that uses folders for content management and organization. I actually have a meta-blog 
-									post where I explain every step I took in making the blog, so feel free to check it 
+									<p>I created a personal blog using the Kirby CMS and PHP. Kirby is a database-less CMS
+									that uses folders for content management and organization. I actually have a meta-blog
+									post where I explain every step I took in making the blog, so feel free to check it
 									out!</p>
-									<p>I plan on using my blog to talk more in-depth about some of my favorite projects 
-									and also post tutorials for some web-development topics that I may have had trouble 
+									<p>I plan on using my blog to talk more in-depth about some of my favorite projects
+									and also post tutorials for some web-development topics that I may have had trouble
 									with while I was learning them.</p>
-									
+
 									<div class="client-info">
 										<h2>Check It Out</h2>
 										<a target="_blank" href="http://www.solomon-blog.com">Personal Blog</a>
@@ -352,7 +349,7 @@
 									<p>This is a project that my team completed at Prof Hacks 2016. It won three awards, including Best Use of Amazon Web Services and Best Internal Integration. The theme of this hackathon was "The Physical Web," and the projects were meant to involve sensors that improved some aspect of our lives with technology.</p>
                             		<p>MediRoute is an application for self-driving cars with passengers that have high levels of risk for things such as strokes, seizures, and heart attacks. If the passenger were to experience a medical emergency while in their self-driving car, MediRoute sensors would detect this and re-route the car to the nearest hospital. It would then send the emergency information and medical history for the patient to the hospital so the personnel could be ready for the passenger's arrival.</p>
                             		<p>By utilizing the Muse Headband, we were able to read the passenger's brain waves. If the readings fell below a minimum threshold, then a medical emergency was detected. The application screen would change and ask the passenger if a medical emergency was indeed occurring, giving them the option to signal a false alarm in case of a misreading. If the passenger did not respond within ten seconds, the car would be re-routed to the nearest hospital.</p>
-									
+
 									<div class="client-info">
 										<h2>Check It Out (Website Currently Unavailable)</h2>
 										<a target="_blank" href="http://www.medicar.tech">www.medicar.tech</a>
@@ -362,7 +359,7 @@
 									<h2>Recursive Maze Solver</h2>
 									<p>This is a project I completed for my Data Structures class. The idea of the project was as follows: create an algorithm which takes a maze input file as a command-line argument and solves that maze using recursion and backtracking.</p>
 									<p>Essentially, the algorithm attempts every single possible path in the maze and prints out a solution each time it finds one, all the while keeping track of the shortest solution. At the end of the program it prints the shortest solution and the total number of recursive calls made.</p>
-									
+
 									<div class="client-info">
 										<h2>Check It Out</h2>
 										<a target="_blank" href="https://github.com/solastley/CS-0445-Assignment-4">Maze Solver Repository</a>
@@ -374,7 +371,7 @@
 				</div>
 			</div>
 		</section>
-		
+
 		<section id="parallax_1">
 			<div class="parallax-overlay"></div>
 			<div class="container">
@@ -410,22 +407,22 @@
 				</div>
 			</div>
 		</section>
-		
+
 		<section id="contact" class="section-padding">
 			<div class="container">
 				<div class="row wow animated fadeInDown">
 					<div class="col-md-12 text-center hero-title">
 						<i class="fa fa-envelope"></i>
 						<h2 class="page-title">Contact</h2>
-						<p>Need a site made? Have further questions?</p>					
-					</div><!--hero title end-->				
+						<p>Need a site made? Have further questions?</p>
+					</div><!--hero title end-->
 				</div>
-				
 
-				<div class="row contact-form wow animated fadeInUp">    
+
+				<div class="row contact-form wow animated fadeInUp">
                     <div class="col-md-7">
-					
-					
+
+
 					<form role="form" id="ajax-contact" method="post" action="includes/contact-form/mailer.php">
 						<div class="form-group">
 							<label for="name">Name:</label>
@@ -445,8 +442,8 @@
 						<div class="form-group">
 							<button class="btn btn-bordered" type="submit">Send Message</button>
 						</div>
-					</form>				
-					<div id="form-messages"></div>	
+					</form>
+					<div id="form-messages"></div>
 
                     </div><!--form col-->
                     <div class="col-md-5">
@@ -468,13 +465,13 @@
                 </div>
 			</div>
 		</section>
-		
+
 		<footer id="footer">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-9 col-sm-9">
 					</div>
-					
+
 					<div class="col-md-3 col-sm-3">
 						<div class="company-name">
 							<p>Solomon <span>Astley</span></p>
@@ -486,9 +483,9 @@
 
         <!--scripts and plugins -->
         <!--must need plugin jquery-->
-        <script src="js/jquery.min.js"></script>        
+        <script src="js/jquery.min.js"></script>
         <!--bootstrap js plugin-->
-        <script src="includes/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>		
+        <script src="includes/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 		<!--easying scroll effect-->
 		<script src="js/jquery.easing.1.3.min.js" type="text/javascript"></script>
 		<script src="js/jquery.sticky.js" type="text/javascript"></script>
@@ -497,23 +494,23 @@
 		<script src="includes/owl-carousel/owl.carousel.min.js" type="text/javascript"></script>
 		<!--wow animation-->
 		<script src="includes/wow-js/wow.min.js" type="text/javascript"></script>
-		
+
 		<!--Activating WOW Animation only for modern browser-->
 		<!--[if !IE]><!-->
 			<script type="text/javascript">new WOW().init();</script>
-		<!--<![endif]-->		
-		
+		<!--<![endif]-->
+
 		<!--Oh Yes, IE 9+ Supports animation, lets activate for IE 9+-->
 		<!--[if gte IE 9]>
 			<script type="text/javascript">new WOW().init();</script>
-		<![endif]-->		 
-		
+		<![endif]-->
+
 		<!--Opacity & Other IE fix for older browser-->
 		<!--[if lte IE 8]>
 			<script type="text/javascript" src="js/ie-opacity-polyfill.js"></script>
 		<![endif]-->
 
-		
+
 		<!--parallax-->
 		<!--<script src="js/jquery.scrolly.js" type="text/javascript"></script>-->
 		<!--portfolio-filter-->
@@ -529,7 +526,7 @@
 		<!--Contact Form-->
 		<script src="includes/contact-form/app.js" type="text/javascript"></script>
 		<script src="includes/contact-form/validatr.js" type="text/javascript"></script>
-		
+
 		<!--customizable plugin edit according to your needs-->
 		<script src="js/custom.js" type="text/javascript"></script>
     </body>

@@ -6,17 +6,17 @@ Author: Perfect Point Marketing
 
 /* ==========================================================================
 	Stylesheet guideline
-   
+
 	1. Home
-	2. Navigation Bar	
+	2. Navigation Bar
 	3. About page
-	4. Education page  
+	4. Education page
 	5. Projects Page
 	6. Contact Page
-	7. Footer	
+	7. Footer
 	8. Preloader CSS
 	9. Color Scheme
-	
+
    ========================================================================== */
 
 
@@ -616,9 +616,9 @@ float:left;
      -o-animation:scaleDelay 1.3s infinite ease-in-out;
         animation:scaleDelay 1.3s infinite ease-in-out;
 }
-/* 
+/*
      * Spinner positions
-     * 1 2 3 
+     * 1 2 3
      * 4 5 6
      * 7 8 9
      */
@@ -815,4 +815,8 @@ background:#2C3E50;
 }
 .setting_panel .color_lists span#magenta_color{
 background:#8E44AD;
+}
+
+.skill-container {
+    padding: 0 8px;
 }

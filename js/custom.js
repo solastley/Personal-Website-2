@@ -9,13 +9,13 @@
 			$(".setting_panel").animate({left:"-226px"});
 			$(this).hide();
 			$("#panel_close").css("display","block");
-		});	
+		});
 
 		$("#panel_close").click(function(){
 			$(".setting_panel").animate({left:"0px"});
 			$(this).hide();
 			$("#panel_open").css("display","block");
-		});	
+		});
 
 		// jQuery Custom scrollbar
 		$("body").niceScroll({
@@ -29,54 +29,62 @@
 			horizrailenabled:false
 		});
 
-		// jQuery Stick menu		
+		// jQuery Stick menu
 		$(".navbar").sticky({topSpacing: 0});
-		
+
 		// jQuery One page nav
 		$(".nav").onePageNav();
-		
+
 		// jQuery Portfolio filter
 		$("#portfolio_list").isotope({
 		  // options
 		  itemSelector: '.pitem',
 		  layoutMode: 'fitRows'
-		});	
-		
-		
+		});
+
+
 		// jQuery Owl Carousel
 		$(".partner-list").owlCarousel({
 			pagination : false,
 			navigation : true,
 			navigationText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"]
 		});
-		
-		
+
+
 		// jQuery counter
 		$('.counter').counterUp({
 			delay: 10,
 			time: 1000
 		});
-		
+
 		// jQuery Lightbox
-		$(".litebox").liteBox();	
-		
-		// jQuery Parallax
-		$('.home-parallax, .features-bg, .parallax-bg').scrolly({bgParallax: true});
-		
-		
-		
+		$(".litebox").liteBox();
+
+
 		// jQuery Contact form validation
 		$('form').validatr({
 			location:"bottom"
-		}); 
-		
+		});
+
 		$("#form-messages").hover(function() {
 			$(this).delay(350).fadeOut('slow');
 		});
-		
-		
 
-		
+		$(window).keydown(function(e){
+			if (e.which == 13) {
+				var position = $(document).scrollTop();
+				var $aboutSection = $("#about");
+				if (position < $aboutSection.offset().top) {
+					$("body").animate({
+						"scrollTop": $aboutSection.offset().top - $("#navigation").height()
+					}, 800);
+				}
+			}
+		});
+
+
+
+
 	});
 
 
@@ -103,16 +111,16 @@
 
 	$(window).load(function(){
 
-		
-		
+
+
 		// Preloader & Option Panel
 		$('.spinner').fadeOut();
 		$('.setting_panel').show();
-		
+
 		$('#preloader').delay(350).fadeOut('slow');
-		
+
 		$('body').delay(350);
-		
+
 
 		// Portfolio Items
 		var $container = $('#portfolio_list');
@@ -124,11 +132,11 @@
 				queue: false
 			}
 		});
-	 
+
 		$('.portfolio-filters li').click(function(){
 			$('.portfolio-filters .active').removeClass('active');
 			$(this).addClass('active');
-	 
+
 			var selector = $(this).attr('data-filter');
 			$container.isotope({
 				filter: selector,
@@ -142,4 +150,4 @@
 		});
 	});
 
-}(jQuery));	
+}(jQuery));
