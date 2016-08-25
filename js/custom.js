@@ -43,20 +43,6 @@
 		});
 
 
-		// jQuery Owl Carousel
-		$(".partner-list").owlCarousel({
-			pagination : false,
-			navigation : true,
-			navigationText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"]
-		});
-
-
-		// jQuery counter
-		$('.counter').counterUp({
-			delay: 10,
-			time: 1000
-		});
-
 		// jQuery Lightbox
 		$(".litebox").liteBox();
 
